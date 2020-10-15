@@ -1,17 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resources/css/style.css" />
     <title>The Marketplace</title>
-</head>
-<body>
-    <main>
-        
-    </main>
-    <footer>
+  </head>
+  <body>
+    <nav id="nav-bar">
+      <div id="dropdown-nav">
+        <input type="checkbox" id="menu" />
+        <label for="menu" id="nav-icon">&#9776;</label>
 
-    </footer>
+        <div class="multi-level">
+          <div class="item">
+            <input type="checkbox" id="A" />
+            <img src="images/Arrow.png" class="arrow" />
+            <label for="A">Services</label>
+
+            <ul>
+              <li><a href="#">Branding</a></li>
+              <li><a href="#">Web/App Development</a></li>
+              <li><a href="#">Internet Marketing and SEO</a></li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <input type="checkbox" id="B" />
+            <img src="images/Arrow.png" class="arrow" />
+            <label for="B">Jobs</label>
+
+            <ul>
+              <li>
+                <div class="sub-item">
+                  <input type="checkbox" id="B-A" />
+                  <img src="images/Arrow.png" class="arrow" />
+                  <label for="B-A">UI/UX</label>
+                  <ul>
+                    <li><a href="#">UI/UX Designer</a></li>
+                    <li><a href="#">UI Designer</a></li>
+                    <li><a href="#">UX Designer</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="sub-item">
+                  <input type="checkbox" id="B-B" />
+                  <img src="images/Arrow.png" class="arrow" />
+                  <label for="B-B">Development</label>
+
+                  <ul>
+                    <li><a href="#">Front end Developer</a></li>
+                    <li><a href="#">Back end Developer</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">Graphic Designer</a></li>
+              <li><a href="#">Logo Designer</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <input type="checkbox" id="C" />
+            <img src="images/Arrow.png" class="arrow" />
+            <label for="C">About Us</label>
+
+            <ul>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Clients</a></li>
+              <li><a href="#">Our Work</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h1 id="nav-title">The Marketplace</h1>
+      <ul id="nav-list">
+        <li>
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search for anything"
+          /><button>Search</button>
+        </li>
+        <li><button>Sign In</button></li>
+      </ul>
+    </nav>
+    <header>
+      <h1 id="title"></h1>
+    </header>
+    <main></main>
+    <footer></footer>
     <script src="resources/js/script.js"></script>
-</body>
+  </body>
 </html>
