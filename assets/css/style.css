@@ -5,6 +5,8 @@ body {
   padding: 0;
 }
 
+/* header/nav */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -101,4 +103,16 @@ label {
 
 #search-input {
   margin-right: 2px;
+}
+
+/* main section */
+
+#title-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  margin-right: 45%;
 }
