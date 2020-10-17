@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>The Marketplace</title>
+  </head>
+  <body>
+    <header>
+      <nav id="nav-bar">
+        <ul id="nav-ul">
+          <li class="nav-li">
+            <h1 id="nav-title"><a href="#home">The Marketplace</a></h1>
+          </li>
+          <li class="nav-li"><input type="text" placeholder="Search" /></li>
+          <li class="nav-li">
+            <h2><a href="#collectibles-art">Collectibles & Art</a></h2>
+          </li>
+          <li class="nav-li">
+            <h2><a href="#fashion">Fashion</a></h2>
+          </li>
+          <li class="nav-li">
+            <h2><a href="#home-garden">Home & Garden</a></h2>
+          </li>
+          <li class="nav-li">
+            <h2><a href="#music">Music</a></h2>
+          </li>
+          <li style="float: right" class="nav-li" id="when-signed-out">
+            <button id="sign-in-btn">Sign in</button>
+          </li>
+          <li
+            style="float: right"
+            class="nav-li"
+            id="when-signed-in"
+            hidden="true"
+          >
+            <button id="post-btn">Post +</button>
+            <div id="user-details"></div>
+            <button id="sign-out-btn">Sign out</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1 id="title">The Market</h1>
+      </section>
+      <section id="collectibles-art">
+        <h2>Collectibles & Art</h2>
+      </section>
+      <section id="fashion">
+        <h2>Fashion</h2>
+      </section>
+      <section id="home-garden">
+        <h2>Home & Garden</h2>
+      </section>
+      <section id="music">
+        <h2>Music</h2>
+      </section>
+    </main>
+
+    <footer>
+      <section id="footer-contact"></section>
+      <section id="footer-faq"></section>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyD63emBMohmmSvwp7iBVt_jbmhjh345Fzo",
+        authDomain: "market-int.firebaseapp.com",
+        databaseURL: "https://market-int.firebaseio.com",
+        projectId: "market-int",
+        storageBucket: "market-int.appspot.com",
+        messagingSenderId: "702755639944",
+        appId: "1:702755639944:web:25454b4321c08bfb9c053d",
+        measurementId: "G-VE1K75QS44",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  </body>
+</html>

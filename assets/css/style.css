@@ -3,116 +3,48 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: "Times New Roman", Times, serif;
 }
 
-/* header/nav */
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0px 5px 2px 5px;
-  border-bottom: 1px solid lightgray;
-}
-
-.multi-level,
-.item ul,
-.nav input[type="checkbox"] {
-  display: none;
-}
-#menu:checked ~ .multi-level,
-.item input:checked ~ ul {
-  display: block;
-}
-
-.arrow {
-  width: 12px;
-  height: 12px;
-  vertical-align: middle;
-  float: left;
-  z-index: 0;
-  margin: 17px 1em 0 2em;
-}
-.item input + .arrow {
-  transform: rotate(-90deg);
-  transition: 0.1s;
-}
-.item input:checked + .arrow {
-  transform: rotate(0deg);
-  transition: 0.1s;
-}
-
-label:hover {
-  cursor: pointer;
-}
-label {
-  width: 100%;
-  display: block;
-  z-index: 3;
-  position: relative;
-}
-
-.nav {
-  background-color: white;
-  overflow-x: hidden;
-}
-
-.nav ul,
-.nav li,
-label {
-  line-height: 50px;
+#nav-ul {
+  list-style-type: none;
   margin: 0;
-  padding: 0 2em;
-  list-style: none;
-  text-decoration: none;
-  font-weight: 100;
-  width: 100%;
-}
-
-.item ul {
-  padding: 0 0.25em;
-}
-.nav li a {
-  line-height: 50px;
-  margin: 0;
-  padding: 0 4em;
-  list-style: none;
-  text-decoration: none;
-  color: #90a4ae;
-  font-weight: 100;
-}
-
-#nav-title {
-  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
   position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  top: 0;
+  width: 100%;
 }
 
-#nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 15px 0px 0px 0px;
-  padding: 0%;
+.nav-li {
+  float: left;
+  border-right: 1px solid #bbb;
 }
 
-#nav-list > li:not(:last-child) {
-  margin: 0px 8px 0px 0px;
+.nav-li * {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.nav-li input,
+.nav-li button {
+  margin: 2px 5px 2px 5px;
+}
+.nav-li a {
+  color: white;
+}
+.nav-li h1,
+.nav-li h2 {
+  margin: 0px 5px 0px 5px;
+  font-size: 22px;
 }
 
-#search-input {
-  margin-right: 2px;
+main {
+  margin-top: 30px;
 }
 
-/* main section */
-
-#title-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#title {
-  margin-right: 45%;
+main > section,
+main footer {
+  min-height: 100vh;
 }
