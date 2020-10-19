@@ -40,11 +40,39 @@ body {
   font-size: 22px;
 }
 
-main {
-  margin-top: 30px;
-}
-
 main > section,
 main footer {
   min-height: 100vh;
+}
+main > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+}
+
+#title {
+  font-size: 50px;
+}
+
+#collectibles-art {
+  background-color: #555;
+}
+
+#fashion {
+  background-color: #666;
+}
+
+#home-garden {
+  background-color: #777;
+}
+
+#music {
+  background-color: #888;
 }
